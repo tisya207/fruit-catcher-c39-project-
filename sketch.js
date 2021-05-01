@@ -11,7 +11,7 @@ var fruits;
 var fruitGroup;
 var fruit1_img, fruit2_img, fruit3_img, fruit4_img, fruit5_img;
 var player_img;
-
+// create the variables for the score and displaying scores. and intialize with zero
 
 function preload(){
   back_img = loadImage("images/jungle.jpg");
@@ -25,8 +25,7 @@ function preload(){
 }
 function setup() {
   createCanvas(1000, 600);
-  database = firebase.database()
-  console.log(database)
+  database = firebase.database();
   game = new Game();
   game.getState();
   game.start();
